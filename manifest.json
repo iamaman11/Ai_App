@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek AI Assistant",
+  "version": "1.0",
+  "description": "Чат-бот с поддержкой DeepSeek, OpenAI и Anthropic",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://api.deepseek.com/*",
+    "https://api.openai.com/*",
+    "https://api.anthropic.com/*"
+  ],
+  "action": {
+    "default_popup": "chat.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Настройки</h2>
+
+    <label for="model">Модель:</label>
+    <select id="model">
+        <option value="deepseek-chat">DeepSeek Chat</option>
+        <option value="openai-gpt">OpenAI GPT</option>
+        <option value="anthropic-claude">Anthropic Claude</option>
+    </select>
+
+    <label for="language">Язык:</label>
+    <select id="language">
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="fr">Français</option>
+    </select>
+
+    <label for="theme-toggle">Тёмная тема:</label>
+    <input type="checkbox" id="theme-toggle">
+
+    <button id="save-settings">Сохранить</button>
+
+    <script src="settings.js"></script>
+</body>
+</html>
